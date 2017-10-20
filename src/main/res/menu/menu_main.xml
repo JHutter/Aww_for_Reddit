@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainmenu"
+    android:parentActivityName="jon.redditawwformykidlet.MainActivity"
+    tools:context="jon.redditawwformykidlet.MainActivity">
+
+    <group android:id="@+id/subreddits" android:checkableBehavior="single">
+    <item
+        android:id="@+id/raww"
+        android:checked="true"
+        android:orderInCategory="105"
+        android:title="r/aww" />
+    <item
+        android:id="@+id/rpuppysmiles"
+
+        android:orderInCategory="106"
+        android:title="r/puppysmiles" />
+    <item
+        android:id="@+id/rcats"
+
+        android:orderInCategory="107"
+        android:title="r/cats" />
+    <item
+        android:id="@+id/rrarepuppers"
+
+
+        android:orderInCategory="108"
+        android:title="r/rarepuppers" />
+    </group>
+
+</menu>

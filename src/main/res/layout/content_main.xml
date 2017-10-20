@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/holo_blue_bright"
+    android:background="@android:color/holo_blue_bright"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jhutter.awwforreddit.MainActivity"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    tools:showIn="@layout/activity_main">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="@string/adunitid"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/holo_blue_bright"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
+
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="0dp"
+        android:layout_height="711dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/settingsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:rippleColor="@android:color/black"
+        app:srcCompat="@drawable/ic_menu_black_24dp" />
+
+
+    <!--<io.codetail.widget.RevealFrameLayout-->
+        <!--android:layout_width="444dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingTop="8dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/imageView">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:visibility="invisible">-->
+            <!--&lt;!&ndash; Put view you like &ndash;&gt;-->
+        <!--</android.support.v7.widget.Toolbar>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/sheet"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:visibility="invisible"-->
+            <!--app:cardElevation="2dp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="240dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<CheckedTextView-->
+                    <!--android:id="@+id/checkedTextView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:checked="true"-->
+                    <!--android:text="r/eyebleach" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_icon"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:scaleType="center"-->
+                    <!--android:clickable="true"-->
+                    <!--android:src="@drawable/ic_info_black_24dp" />-->
+
+
+
+
+
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    <!--</io.codetail.widget.RevealFrameLayout>-->
+
+
+
+
+</android.support.constraint.ConstraintLayout>
