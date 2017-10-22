@@ -1,4 +1,4 @@
-package jon.redditawwformykidlet;
+package jhutter.awwforreddit;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-//package jon.redditawwformykidlet;
+//package jhutter.awwforreddit;
 package jhutter.awwforreddit;
 
 import java.util.ArrayList;

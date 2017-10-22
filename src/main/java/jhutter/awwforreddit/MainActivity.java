@@ -1,4 +1,4 @@
-//package jon.redditawwformykidlet;
+//package jhutter.awwforreddit;
 package jhutter.awwforreddit;
 
 import android.content.Context;
@@ -45,12 +45,17 @@ public class MainActivity extends AppCompatActivity {
         //FloatingActionButton settingsBtn = (FloatingActionButton) findViewById(R.id.settingsBtn);
         //setSupportActionBar((Toolbar) settingsBtn);
         AdRequest adRequest = new AdRequest.Builder().build();
-        if (!adRequest.isTestDevice(this)){
+        String adAppId = this.getResources().getString(R.string.adappid);
+        MobileAds.initialize(this, adAppId);
+        mAdView = (AdView) findViewById(R.id.adView);
+        mAdView.loadAd(adRequest);
+        /*if (!adRequest.isTestDevice(this)){
             String adAppId = this.getResources().getString(R.string.adappid);
             //MobileAds.initialize(this, adAppId);
             mAdView = (AdView) findViewById(R.id.adView);
             mAdView.loadAd(adRequest);
-        }
+        }*/
+
 
         /*if (!isTestDevice()){
             String adAppId = this.getResources().getString(R.string.adappid);

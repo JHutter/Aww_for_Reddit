@@ -2,8 +2,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainmenu"
-    android:parentActivityName="jon.redditawwformykidlet.MainActivity"
-    tools:context="jon.redditawwformykidlet.MainActivity">
+    android:parentActivityName="jhutter.awwforreddit.MainActivity"
+    tools:context="jhutter.awwforreddit.MainActivity">
 
     <group android:id="@+id/subreddits" android:checkableBehavior="single">
     <item

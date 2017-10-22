@@ -15,8 +15,8 @@
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
-        android:layout_width="360dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         app:adSize="SMART_BANNER"
@@ -30,11 +30,11 @@
     <ImageView
         android:id="@+id/imageView"
 
-        android:layout_width="368dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
         android:adjustViewBounds="true"
         android:background="@android:color/holo_blue_bright"
@@ -47,13 +47,13 @@
         tools:ignore="ContentDescription" />
 
 
-    <View
+    <!-- <View
         android:id="@+id/overlay"
         android:layout_width="0dp"
         android:layout_height="711dp"
         android:visibility="invisible"
         tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp" /> -->
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/settingsBtn"
